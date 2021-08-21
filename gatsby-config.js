@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Offline Units Converter",
+    siteUrl: "https://unitsapp.xyz/",
+    title: "Units Converter",
+    description: "Offline Units Converter",
+    author: "Ignat Skoryh"
   },
   plugins: [
     "gatsby-plugin-postcss",
