@@ -15,7 +15,7 @@ function Layout({ children }) {
       <footer className="bg-navy">
         <nav className="flex justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
           <p className="text-white">
-            &copy; 2021 Ignat Skoryh
+            &copy; 2022 Ignat Skoryh
           </p>
 
           <p>
