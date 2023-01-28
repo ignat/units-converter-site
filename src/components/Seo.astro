@@ -1,0 +1,31 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+const metaDescription: string = 'Offline Units Converter';
+const metaTitle: string = title + ' | Units Converter';
+const keywords: string[] = [
+    'units', 'unit', 'convertor',
+    'convert', 'offline', 'free',
+    'mobile', 'ios', 'home'
+];
+---
+
+<meta name="description" content={metaDescription} />
+<meta name="og:title" content={metaTitle} />
+<meta name="og:description" content={metaDescription} />
+<meta name="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={metaTitle} />
+<meta name="twitter:description" content={metaDescription} />
+<meta name="keywords" content={keywords.join(', ')} />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+<meta name="msapplication-TileColor" content="#2b5797" />
+<meta name="theme-color" content="yellow" />

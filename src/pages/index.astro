@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import appIcon from '../images/app-icon.png';
+---
+
+<Layout title="Home">
+
+<section class="flex flex-wrap mt-8 mb-32">
+  <div class="w-full md:w-1/2 text-center md:text-left">
+    <h1 class="text-5xl font-bold tracking-tight leading-tight">
+      Offline Units Converter
+    </h1>
+    <div class="my-4 text-gray-800 text-lg">
+        Convert values of different systems of measurement on the go
+        without Internet connection.
+    </div>
+    <div class="my-8">
+      <a href="https://apps.apple.com/us/app/offline-units-converter/id1581993464?itsct=apps_box_badge&amp;itscg=30200" class="app-store-badge">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1629331200&h=9584e9f61aa236f31c828fec5b944d4f" width="250" height="83" alt="Download on the App Store" />
+      </a>
+    </div>
+  </div>
+  <div class="w-full md:w-1/2 text-center">
+    <img alt="App Icon" class="m-auto rounded-3xl shadow-lg" src={appIcon} width="300" height="300" />
+  </div>
+</section>
+
+</Layout>
+
+<style>
+  a.app-store-badge {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 13px;
+    width: 250px;
+    height: 83px;
+  }
+  a.app-store-badge img {
+    border-radius: 13px;
+    width: 250px;
+    height: 83px;
+  }
+</style>
