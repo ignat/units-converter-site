@@ -6,7 +6,8 @@
   "description": "Offline Units Converter",
   "author": "Ignat Skoryh",
   "keywords": [
-    "astro", "tailwindcss"
+    "astro",
+    "tailwindcss"
   ],
   "scripts": {
     "dev": "astro dev",
@@ -18,6 +19,7 @@
   "dependencies": {
     "@astrojs/tailwind": "^3.0.0",
     "@fontsource/inter": "^4.5.15",
+    "@hotwired/turbo": "^7.2.4",
     "astro": "^2.0.2",
     "tailwindcss": "^3.2.4"
   }

@@ -40,7 +40,7 @@ const menuItems: MenuItem[] = [
 		<Seo title={title} />
 	</head>
 	<body>
-    <div id="swup" class="flex flex-col min-h-screen font-sans text-gray-900">
+    <div class="flex flex-col min-h-screen font-sans text-gray-900">
 			<header class="bg-navy">
 			  <div class="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
 				<a href="/">
@@ -68,6 +68,7 @@ const menuItems: MenuItem[] = [
 					<a
 					  class="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
 					  href={link.route}
+					  data-turbo-preload
 					>
 					  {link.title}
 					</a>
@@ -101,3 +102,7 @@ const menuItems: MenuItem[] = [
     </div>
 	</body>
 </html>
+
+<script>
+	import * as Turbo from "@hotwired/turbo";
+</script>
