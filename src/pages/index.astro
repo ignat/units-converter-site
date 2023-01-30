@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import AppStoreBadge from '../components/AppStoreBadge.astro';
-import appIcon150 from '../images/app-icon-150.png';
-import appIcon300 from '../images/app-icon-300.png';
-import appIcon600 from '../images/app-icon-600.png';
-import appIcon1024 from '../images/app-icon-1024.png';
+import appIcon150 from '../images/app-icon-150.webp';
+import appIcon300 from '../images/app-icon-300.webp';
+import appIcon600 from '../images/app-icon-600.webp';
+import appIcon1024 from '../images/app-icon-1024.webp';
+import appIcon from '../images/app-icon-600.png';
 ---
 
 <Layout title="Home">
@@ -28,7 +29,7 @@ import appIcon1024 from '../images/app-icon-1024.png';
     <img
       alt="App Icon"
       class="m-auto rounded-3xl shadow-lg w-[300px] h-[300px]"
-      src={appIcon600}
+      src={appIcon}
       srcset={`${appIcon150} 150w, ${appIcon300} 300w, ${appIcon600} 600w, ${appIcon1024} 1024w`}
       sizes="300px"
     />
